@@ -3,14 +3,14 @@
 //EXTRA CLASSE
 
 
-// QUESTÃO 1
+// QUESTï¿½O 1
 
 /*
 main(){
 	
 	int resposta;
 	
-	printf("1-Rio de Janeiro  2-São Paulo  3-Minas Gerais 4-Espirito Santo  5-Nenhuma das opcoes \n ");
+	printf("1-Rio de Janeiro  2-Sï¿½o Paulo  3-Minas Gerais 4-Espirito Santo  5-Nenhuma das opcoes \n ");
 	scanf("%d",&resposta);
 	
 	switch(resposta){
@@ -46,7 +46,7 @@ main(){
 
 
 
-// QUESTÃO 2
+// QUESTï¿½O 2
 
 /*
 main(){
@@ -77,7 +77,7 @@ main(){
 	if(n2>n1){
 		
 		dif=n2-n1;
-		printf(" %d e maior que %d e a diferença entre eles e: %d\n ",n2, n1, dif);
+		printf(" %d e maior que %d e a diferenï¿½a entre eles e: %d\n ",n2, n1, dif);
 		printf("Esses sao os numeros impares entre eles do maior para o menor: ");
 		
 		for(i=n2-1; i>n1; i--){
@@ -96,7 +96,7 @@ main(){
 
 
 
-// 	QUESTÃO 3
+// 	QUESTï¿½O 3
 
 /*
 main(){
@@ -105,7 +105,7 @@ main(){
 	float nulo, branco, percnulo, percbranco;
 	
 	
-//	VOU TER QUE DECLARAR 0 POIS ALGUMAS VARIÁVEIS ESTAVAM VINDO COM UM VALOR ALEATÓRIO
+//	VOU TER QUE DECLARAR 0 POIS ALGUMAS VARIï¿½VEIS ESTAVAM VINDO COM UM VALOR ALEATï¿½RIO
 	nulo=0;
 	branco=0;
 	fatima=0;
@@ -157,6 +157,43 @@ main(){
 	
 }
 */
+
+//	QUESTÃƒO 4
+
+/*
+main(){
+	
+	int id, maiorid, menorid;
+	float pessoas, totalid, mediaid;
+	
+	id=0;
+	maiorid=0;
+	menorid=300;
+	pessoas=0;
+	
+	do{
+		printf("Insira sua idade: ");
+		scanf("%d",&id);
+		
+		pessoas=pessoas+1;
+		totalid = totalid+id;
+		
+		if (id>maiorid){
+			maiorid=id;
+		}
+		if (id<menorid && id>0){
+			menorid=id;
+		}		
+	}while(id!=0);
+	
+	pessoas=pessoas-1;
+	mediaid=totalid/pessoas;
+	
+	
+	printf("\n Total de pessoas: %.1f\n",pessoas);
+	printf(" Essa foi a media de idade do grupo: %.1f\n",mediaid);
+	printf(" A pessoa mais velha tem %d anos\n A pessoa mais nova tem %d anos", maiorid, menorid);
+}
 
 
 
